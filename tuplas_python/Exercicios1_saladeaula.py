@@ -32,7 +32,7 @@ print(subtupla)  # Saída: ('a', 'b', 'c')
 # Exercício 6:
 # Verifique se o número 5 está presente na tupla (1, 2, 3, 4, 5) e imprima o resultado.
 tupla = (1, 2, 3, 4, 5)
-print(5 in tupla)
+print(5 in tupla) # Saída: True
 
 # Exercício 7: Contagem de Elementos
 # Dada a tupla (1, 2, 2, 3, 3, 3, 4, 4, 4, 4), conte quantas vezes o número 3 aparece.
