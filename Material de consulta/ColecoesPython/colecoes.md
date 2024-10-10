@@ -1,5 +1,3 @@
-Aqui está a aula em formato Markdown:
-
 ```markdown
 # Aula: Coleções em Python
 
