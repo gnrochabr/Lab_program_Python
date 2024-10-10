@@ -1,10 +1,10 @@
-# Aula: Coleções em Python
+# Coleções em Python
 
-Nesta aula, vamos aprender sobre três coleções fundamentais em Python: **listas**, **tuplas** e **dicionários**. Cada uma dessas coleções tem suas próprias características e é utilizada em diferentes situações, dependendo da necessidade do programa.
+Neste conteúdo vamos aprender sobre três coleções fundamentais em Python: **listas**, **tuplas** e **dicionários**. Cada uma dessas coleções tem suas próprias características e é utilizada em diferentes situações, dependendo da necessidade do programa.
 
 ## Listas
 
-As listas são coleções **mutáveis** que podem armazenar diferentes tipos de dados. Isso significa que, após a criação, você pode modificar o conteúdo de uma lista, adicionando ou removendo elementos.
+Conforme já vimos, as listas são coleções **mutáveis** que podem armazenar diferentes tipos de dados. Isso significa que, após a criação, você pode modificar o conteúdo de uma lista, adicionando ou removendo elementos.
 
 ```python
 programadores = ['Victor', 'Juliana', 'Samuel', 'Caio', 'Luana']
