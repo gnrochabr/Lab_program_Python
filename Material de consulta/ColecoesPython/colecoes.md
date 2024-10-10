@@ -1,4 +1,3 @@
-```markdown
 # Aula: Coleções em Python
 
 Nesta aula, vamos aprender sobre três coleções fundamentais em Python: **listas**, **tuplas** e **dicionários**.
@@ -11,6 +10,7 @@ As listas são coleções mutáveis que podem armazenar diferentes tipos de dado
 programadores = ['Victor', 'Juliana', 'Samuel', 'Caio', 'Luana']
 print(programadores[4])  # Saída: Luana
 ```
+
 
 No exemplo acima, criamos uma lista chamada `programadores`. O item no índice 4 é "Luana".
 
