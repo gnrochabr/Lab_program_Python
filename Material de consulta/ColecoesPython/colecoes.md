@@ -121,8 +121,3 @@ print(len(paises))  # Saída: 4
 ```python
 print(type(paises))  # Saída: list
 ```
-
-Agora que você aprendeu o básico sobre listas, tuplas e dicionários em Python, pode começar a utilizá-los para organizar dados nos seus programas!
-```
-
-Esse conteúdo está estruturado em Markdown, facilitando a leitura em plataformas de edição de texto e documentação.
