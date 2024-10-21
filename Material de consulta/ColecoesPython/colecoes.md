@@ -230,7 +230,7 @@ print(type(paises))  # Saída: <class 'list'>
 ```
 
 
-## Conjuntos (Set) em Python**
+## Conjuntos (Set) em Python
 
 #### 1. Introdução
 
