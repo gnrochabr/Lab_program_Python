@@ -13,6 +13,8 @@ print(programadores[4])  # Saída: Luana
 
 No exemplo acima, criamos uma lista chamada `programadores`. O item no índice 4 é "Luana".
 
+---
+
 #### 1. Características das Listas
 
 As listas são altamente flexíveis. Elas podem armazenar diferentes tipos de dados, inclusive misturados. Por exemplo, podemos ter números, strings e até outras listas dentro de uma mesma lista:
@@ -43,6 +45,8 @@ programadores.insert(1, 'Rafael')
 print(programadores)  # ['Victor', 'Rafael', 'Carolina', 'Samuel', 'Caio', 'Luana']
 ```
 
+---
+
 #### 2. Removendo Itens
 
 Podemos remover itens de uma lista usando o método `remove()` (remover por valor) ou `pop()` (remover por índice):
@@ -61,9 +65,13 @@ print(programadores)  # ['Carolina', 'Samuel', 'Caio', 'Luana']
 
 As **tuplas** são semelhantes às listas, mas têm uma característica importante que as diferencia: **tuplas são imutáveis**. Isso significa que, uma vez criada, uma tupla não pode ser modificada — você não pode alterar seus elementos, nem adicionar ou remover itens.
 
+---
+
 #### 1. Quando Usar Tuplas?
 
 As tuplas são usadas quando você precisa garantir que os dados permaneçam inalterados durante a execução do programa. Um exemplo clássico seria armazenar coordenadas geográficas ou configurações de sistema que não devem ser alteradas.
+
+---
 
 #### 2. Criando Tuplas
 
@@ -79,6 +87,7 @@ Diferente das listas, se tentarmos modificar uma tupla, receberemos um erro:
 ```python
 times_rj[1] = 'Bangu'  # Isso causará um erro
 ```
+---
 
 #### 3. Métodos das Tuplas
 
@@ -101,6 +110,8 @@ print(dados)  # Saída: (23, 'João', [5, 7, 9], {'chave': 'valor'})
 
 Os **dicionários** em Python são coleções de dados organizadas em pares *chave/valor*. Eles são usados quando você precisa associar uma chave única a um valor específico. É uma estrutura extremamente útil para representar dados mais complexos, como informações de um cliente ou de um produto.
 
+---
+
 #### 1. Estrutura de um Dicionário
 
 Vamos criar um exemplo simples de dicionário:
@@ -115,6 +126,8 @@ print(dados_cliente['Nome'])  # Saída: Renan
 ```
 
 Neste exemplo, cada chave ('Nome', 'Endereco', 'Telefone') está associada a um valor específico.
+
+---
 
 #### 2. Adicionando e Removendo Itens
 
@@ -136,6 +149,8 @@ print(dados_cliente)  # {'Nome': 'Renan', 'Endereco': 'Rua Cruzeiro do Sul', 'Id
 del dados_cliente['Endereco']
 print(dados_cliente)  # {'Nome': 'Renan', 'Idade': 40}
 ```
+
+---
 
 #### 3. Dicionários com Múltiplas Características
 
@@ -168,6 +183,8 @@ clientes['cliente1']['Idade'] = 31
 print(clientes['cliente1']['Idade'])  # Saída: 31
 ```
 
+---
+
 #### 4. Verificando a Existência de uma Chave
 
 Antes de acessar uma chave, você pode verificar se ela existe para evitar erros:
@@ -178,6 +195,7 @@ if 'Telefone' in dados_cliente:
 else:
     print("Telefone não encontrado")
 ```
+---
 
 #### 5. Funções Úteis para Coleções
 
