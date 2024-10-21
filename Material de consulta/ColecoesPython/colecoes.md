@@ -210,3 +210,201 @@ print(len(paises))  # Saída: 4
 ```python
 print(type(paises))  # Saída: <class 'list'>
 ```
+
+
+## Conjuntos (Set) em Python**
+
+#### 1. Introdução
+
+O tipo de dado **set** em Python é uma coleção desordenada de elementos únicos. Ao contrário de listas e tuplas, os conjuntos não permitem elementos duplicados e são altamente eficientes para operações como verificação de existência de elementos. Vamos explorar os principais recursos, métodos e aplicações práticas de conjuntos em Python.
+
+---
+
+#### 2. Criando um Conjunto
+
+Em Python, um conjunto pode ser criado usando a função `set()` ou utilizando chaves `{}` para elementos diretamente. 
+
+##### Exemplos:
+```python
+# Criando um conjunto vazio
+meu_conjunto = set()
+
+# Criando um conjunto com valores
+conjunto_de_numeros = {1, 2, 3, 4, 5}
+print(conjunto_de_numeros)
+```
+
+##### Saída:
+```bash
+{1, 2, 3, 4, 5}
+```
+
+##### Nota:
+- Não é possível criar um conjunto vazio apenas com `{}`, isso cria um dicionário vazio. Para conjuntos vazios, sempre use `set()`.
+- A ordem dos elementos não é garantida em um conjunto.
+
+---
+
+#### 3. Propriedades dos Conjuntos
+
+- **Elementos Únicos**: Um conjunto não permite elementos duplicados. Se você tentar adicionar elementos repetidos, eles serão ignorados.
+  
+##### Exemplo:
+```python
+conjunto = {1, 2, 2, 3, 4}
+print(conjunto)
+```
+
+##### Saída:
+```bash
+{1, 2, 3, 4}
+```
+
+- **Imutáveis**: Os elementos de um conjunto devem ser imutáveis (não podem ser alterados). Por isso, você pode usar inteiros, strings, tuplas, mas não listas ou outros conjuntos dentro de um conjunto.
+
+##### Exemplo:
+```python
+conjunto = {1, 2, "texto", (3, 4)}
+```
+
+---
+
+#### 4. Operações Básicas com Conjuntos
+
+Os conjuntos suportam várias operações matemáticas como união, interseção, diferença e diferença simétrica.
+
+##### a. **Adicionar Elementos**: 
+Usa-se o método `add()` para adicionar um único elemento a um conjunto.
+
+```python
+conjunto = {1, 2, 3}
+conjunto.add(4)
+print(conjunto)
+```
+
+##### Saída:
+```bash
+{1, 2, 3, 4}
+```
+
+##### b. **Remover Elementos**:
+Os métodos `remove()` e `discard()` removem um elemento do conjunto. A diferença é que `remove()` lança um erro se o elemento não existir, enquanto `discard()` não.
+
+```python
+conjunto = {1, 2, 3}
+conjunto.remove(2)   # Remove o 2
+conjunto.discard(4)  # Não lança erro se 4 não existir
+print(conjunto)
+```
+
+##### Saída:
+```bash
+{1, 3}
+```
+
+##### c. **União de Conjuntos**:
+O método `union()` ou o operador `|` retorna um novo conjunto com todos os elementos de ambos os conjuntos, sem duplicatas.
+
+```python
+conjunto1 = {1, 2, 3}
+conjunto2 = {3, 4, 5}
+uniao = conjunto1.union(conjunto2)  # ou conjunto1 | conjunto2
+print(uniao)
+```
+
+##### Saída:
+```bash
+{1, 2, 3, 4, 5}
+```
+
+##### d. **Interseção de Conjuntos**:
+O método `intersection()` ou o operador `&` retorna os elementos comuns a ambos os conjuntos.
+
+```python
+interseccao = conjunto1.intersection(conjunto2)  # ou conjunto1 & conjunto2
+print(interseccao)
+```
+
+##### Saída:
+```bash
+{3}
+```
+
+##### e. **Diferença de Conjuntos**:
+O método `difference()` ou o operador `-` retorna os elementos presentes apenas no primeiro conjunto e não no segundo.
+
+```python
+diferenca = conjunto1.difference(conjunto2)  # ou conjunto1 - conjunto2
+print(diferenca)
+```
+
+##### Saída:
+```bash
+{1, 2}
+```
+
+##### f. **Diferença Simétrica**:
+O método `symmetric_difference()` ou o operador `^` retorna todos os elementos que estão em um ou outro conjunto, mas não em ambos.
+
+```python
+dif_simetrica = conjunto1.symmetric_difference(conjunto2)  # ou conjunto1 ^ conjunto2
+print(dif_simetrica)
+```
+
+##### Saída:
+```bash
+{1, 2, 4, 5}
+```
+
+---
+
+#### 5. Métodos Úteis
+
+- **`len()`**: Retorna o número de elementos no conjunto.
+  
+```python
+print(len(conjunto1))  # Saída: 3
+```
+
+- **`clear()`**: Remove todos os elementos do conjunto, esvaziando-o.
+
+```python
+conjunto1.clear()
+print(conjunto1)  # Saída: set()
+```
+
+- **`copy()`**: Faz uma cópia superficial do conjunto.
+
+```python
+copia = conjunto2.copy()
+print(copia)  # Saída: {3, 4, 5}
+```
+
+---
+
+#### 6. Aplicações de Conjuntos
+
+- **Remover Duplicatas de uma Lista**: Como conjuntos não permitem elementos repetidos, podemos facilmente remover duplicatas de uma lista convertendo-a em um conjunto.
+
+```python
+lista_com_duplicatas = [1, 2, 2, 3, 4, 4, 5]
+sem_duplicatas = list(set(lista_com_duplicatas))
+print(sem_duplicatas)
+```
+
+##### Saída:
+```bash
+[1, 2, 3, 4, 5]
+```
+
+- **Verificar Subconjuntos e Superconjuntos**:
+  - `issubset()`: Verifica se um conjunto é subconjunto de outro.
+  - `issuperset()`: Verifica se um conjunto é superconjunto de outro.
+
+```python
+conjunto_a = {1, 2}
+conjunto_b = {1, 2, 3, 4}
+
+print(conjunto_a.issubset(conjunto_b))  # Saída: True
+print(conjunto_b.issuperset(conjunto_a))  # Saída: True
+```
