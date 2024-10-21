@@ -13,7 +13,7 @@ print(programadores[4])  # Saída: Luana
 
 No exemplo acima, criamos uma lista chamada `programadores`. O item no índice 4 é "Luana".
 
-### Características das Listas
+#### 1. Características das Listas
 
 As listas são altamente flexíveis. Elas podem armazenar diferentes tipos de dados, inclusive misturados. Por exemplo, podemos ter números, strings e até outras listas dentro de uma mesma lista:
 
@@ -43,7 +43,7 @@ programadores.insert(1, 'Rafael')
 print(programadores)  # ['Victor', 'Rafael', 'Carolina', 'Samuel', 'Caio', 'Luana']
 ```
 
-### Removendo Itens
+#### 2. Removendo Itens
 
 Podemos remover itens de uma lista usando o método `remove()` (remover por valor) ou `pop()` (remover por índice):
 
@@ -61,11 +61,11 @@ print(programadores)  # ['Carolina', 'Samuel', 'Caio', 'Luana']
 
 As **tuplas** são semelhantes às listas, mas têm uma característica importante que as diferencia: **tuplas são imutáveis**. Isso significa que, uma vez criada, uma tupla não pode ser modificada — você não pode alterar seus elementos, nem adicionar ou remover itens.
 
-### Quando Usar Tuplas?
+#### 1. Quando Usar Tuplas?
 
 As tuplas são usadas quando você precisa garantir que os dados permaneçam inalterados durante a execução do programa. Um exemplo clássico seria armazenar coordenadas geográficas ou configurações de sistema que não devem ser alteradas.
 
-### Criando Tuplas
+#### 2. Criando Tuplas
 
 Veja um exemplo simples de tupla:
 
@@ -80,7 +80,7 @@ Diferente das listas, se tentarmos modificar uma tupla, receberemos um erro:
 times_rj[1] = 'Bangu'  # Isso causará um erro
 ```
 
-### Métodos das Tuplas
+#### 3. Métodos das Tuplas
 
 Apesar de serem imutáveis, as tuplas ainda permitem a leitura de seus elementos e podem ser usadas em operações comuns, como contagem de itens ou busca de valores. Exemplos:
 
@@ -116,7 +116,7 @@ print(dados_cliente['Nome'])  # Saída: Renan
 
 Neste exemplo, cada chave ('Nome', 'Endereco', 'Telefone') está associada a um valor específico.
 
-### Adicionando e Removendo Itens
+#### Adicionando e Removendo Itens
 
 Você pode adicionar novos pares *chave/valor* a qualquer momento:
 
@@ -137,7 +137,7 @@ del dados_cliente['Endereco']
 print(dados_cliente)  # {'Nome': 'Renan', 'Idade': 40}
 ```
 
-### Dicionários com Múltiplas Características
+#### Dicionários com Múltiplas Características
 
 Os dicionários podem ser usados para armazenar dados mais complexos. Por exemplo, imagine que queremos armazenar informações de múltiplos clientes, cada um com várias características:
 
@@ -168,7 +168,7 @@ clientes['cliente1']['Idade'] = 31
 print(clientes['cliente1']['Idade'])  # Saída: 31
 ```
 
-### Verificando a Existência de uma Chave
+#### Verificando a Existência de uma Chave
 
 Antes de acessar uma chave, você pode verificar se ela existe para evitar erros:
 
@@ -179,7 +179,7 @@ else:
     print("Telefone não encontrado")
 ```
 
-## Funções Úteis para Coleções
+#### Funções Úteis para Coleções
 
 Existem várias funções úteis que podem ser aplicadas a coleções, incluindo listas, tuplas e dicionários:
 
