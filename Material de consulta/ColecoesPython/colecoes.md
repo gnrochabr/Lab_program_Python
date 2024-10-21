@@ -101,7 +101,7 @@ print(dados)  # Saída: (23, 'João', [5, 7, 9], {'chave': 'valor'})
 
 Os **dicionários** em Python são coleções de dados organizadas em pares *chave/valor*. Eles são usados quando você precisa associar uma chave única a um valor específico. É uma estrutura extremamente útil para representar dados mais complexos, como informações de um cliente ou de um produto.
 
-### Estrutura de um Dicionário
+#### 1. Estrutura de um Dicionário
 
 Vamos criar um exemplo simples de dicionário:
 
@@ -116,7 +116,7 @@ print(dados_cliente['Nome'])  # Saída: Renan
 
 Neste exemplo, cada chave ('Nome', 'Endereco', 'Telefone') está associada a um valor específico.
 
-#### Adicionando e Removendo Itens
+#### 2. Adicionando e Removendo Itens
 
 Você pode adicionar novos pares *chave/valor* a qualquer momento:
 
@@ -137,7 +137,7 @@ del dados_cliente['Endereco']
 print(dados_cliente)  # {'Nome': 'Renan', 'Idade': 40}
 ```
 
-#### Dicionários com Múltiplas Características
+#### 3. Dicionários com Múltiplas Características
 
 Os dicionários podem ser usados para armazenar dados mais complexos. Por exemplo, imagine que queremos armazenar informações de múltiplos clientes, cada um com várias características:
 
@@ -168,7 +168,7 @@ clientes['cliente1']['Idade'] = 31
 print(clientes['cliente1']['Idade'])  # Saída: 31
 ```
 
-#### Verificando a Existência de uma Chave
+#### 4. Verificando a Existência de uma Chave
 
 Antes de acessar uma chave, você pode verificar se ela existe para evitar erros:
 
@@ -179,7 +179,7 @@ else:
     print("Telefone não encontrado")
 ```
 
-#### Funções Úteis para Coleções
+#### 5. Funções Úteis para Coleções
 
 Existem várias funções úteis que podem ser aplicadas a coleções, incluindo listas, tuplas e dicionários:
 
